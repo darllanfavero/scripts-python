@@ -70174,6 +70174,158 @@
 						"description": "Generated from cURL: curl -X GET \"http://{{o11_base_url}}/scripts/{{providerId}}/manifest\" -G --data-urlencode \"action=manifest\" --data-urlencode \"bind={{bind}}\" --data-urlencode \"proxy={{proxy}}\" --data-urlencode \"doh={{doh}}\" --data-urlencode \"dns={{dns}}\" --data-urlencode \"worker={{worker}}\" --data-urlencode \"id={{id}}\" --data-urlencode \"drm={{drm}}\""
 					},
 					"response": []
+				},
+				{
+					"name": "O11 CDM Script",
+					"id": "36183903-fe430a6f-1529-4043-9a33-bf27c50f2f1a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"action\":\"cdm\",\"bind\":\"{{bind}}\",\"proxy\":\"{{proxy}}\",\"doh\":\"{{doh}}\",\"dns\":\"{{dns}}\",\"worker\":\"{{worker}}\",\"drm\":\"{{drm}}\",\"pssh\":\"{{pssh}}\",\"challenge\":\"{{challenge}}\",\"id\":\"{{id}}\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{o11_base_url}}/scripts/{{providerId}}/cdm",
+							"protocol": "http",
+							"host": [
+								"{{o11_base_url}}"
+							],
+							"path": [
+								"scripts",
+								"{{providerId}}",
+								"cdm"
+							]
+						},
+						"description": "Generated from cURL: curl -X POST \"http://{{o11_base_url}}/scripts/{{providerId}}/cdm\" -H \"Content-Type: application/json\" -d '{\"action\":\"cdm\",\"bind\":\"{{bind}}\",\"proxy\":\"{{proxy}}\",\"doh\":\"{{doh}}\",\"dns\":\"{{dns}}\",\"worker\":\"{{worker}}\",\"drm\":\"{{drm}}\",\"pssh\":\"{{pssh}}\",\"challenge\":\"{{challenge}}\",\"id\":\"{{id}}\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "O11 Events Script",
+					"id": "36183903-7e06b7e1-74ae-442e-9f13-15fc46af73fa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"type": "text",
+									"key": "action",
+									"value": "events"
+								},
+								{
+									"type": "text",
+									"key": "bind",
+									"value": "{{bind}}"
+								},
+								{
+									"type": "text",
+									"key": "proxy",
+									"value": "{{proxy}}"
+								},
+								{
+									"type": "text",
+									"key": "doh",
+									"value": "{{doh}}"
+								},
+								{
+									"type": "text",
+									"key": "dns",
+									"value": "{{dns}}"
+								},
+								{
+									"type": "text",
+									"key": "worker",
+									"value": "{{worker}}"
+								},
+								{
+									"type": "text",
+									"key": "heartbeaturl",
+									"value": "{{heartbeaturl}}"
+								},
+								{
+									"type": "text",
+									"key": "heartbeatparams",
+									"value": "{{heartbeatparams}}"
+								},
+								{
+									"type": "text",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{o11_base_url}}/scripts/{{providerId}}/events?action=events&bind={{bind}}&proxy={{proxy}}&doh={{doh}}&dns={{dns}}&worker={{worker}}&heartbeaturl={{heartbeaturl}}&heartbeatparams={{heartbeatparams}}&id={{id}}",
+							"protocol": "http",
+							"host": [
+								"{{o11_base_url}}"
+							],
+							"path": [
+								"scripts",
+								"{{providerId}}",
+								"events"
+							],
+							"query": [
+								{
+									"key": "action",
+									"value": "events"
+								},
+								{
+									"key": "bind",
+									"value": "{{bind}}"
+								},
+								{
+									"key": "proxy",
+									"value": "{{proxy}}"
+								},
+								{
+									"key": "doh",
+									"value": "{{doh}}"
+								},
+								{
+									"key": "dns",
+									"value": "{{dns}}"
+								},
+								{
+									"key": "worker",
+									"value": "{{worker}}"
+								},
+								{
+									"key": "heartbeaturl",
+									"value": "{{heartbeaturl}}"
+								},
+								{
+									"key": "heartbeatparams",
+									"value": "{{heartbeatparams}}"
+								},
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X GET \"http://{{o11_base_url}}/scripts/{{providerId}}/events\" -G --data-urlencode \"action=events\" --data-urlencode \"bind={{bind}}\" --data-urlencode \"proxy={{proxy}}\" --data-urlencode \"doh={{doh}}\" --data-urlencode \"dns={{dns}}\" --data-urlencode \"worker={{worker}}\" --data-urlencode \"heartbeaturl={{heartbeaturl}}\" --data-urlencode \"heartbeatparams={{heartbeatparams}}\" --data-urlencode \"id={{id}}\""
+					},
+					"response": []
 				}
 			],
 			"id": "36183903-c9a07437-3add-4c87-a3a0-b5b8cbc5aa6a"
