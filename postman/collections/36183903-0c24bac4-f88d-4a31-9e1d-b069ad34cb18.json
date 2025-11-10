@@ -70074,6 +70074,34 @@
 			"item": [
 				{
 					"name": "O11 Manifest Script",
+					"event": [
+						{
+							"id": "27b13a89-22ab-4d5c-8402-66c9fcba0396",
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status is 200\", function () { pm.response.to.have.status(200); });",
+									"",
+									"pm.test(\"Content-Type is JSON\", function () {",
+									"  pm.expect(pm.response.headers.get(\"Content-Type\") || pm.response.headers.get(\"content-type\")).to.include(\"application/json\");",
+									"});",
+									"",
+									"let json;",
+									"try { json = pm.response.json(); } catch(e) { json = {}; }",
+									"",
+									"pm.test(\"Manifest has required fields\", function () {",
+									"  pm.expect(json).to.be.an(\"object\");",
+									"  // allow either top-level or nested keys depending on provider shape",
+									"  pm.expect(json.ManifestUrl, \"ManifestUrl\").to.be.a(\"string\");",
+									"  pm.expect(json.Headers, \"Headers\").to.be.an(\"object\");",
+									"  pm.expect(json.Headers.Manifest, \"Headers.Manifest\").to.be.an(\"object\");",
+									"  pm.expect(json.Headers.Media, \"Headers.Media\").to.be.an(\"object\");",
+									"});"
+								]
+							}
+						}
+					],
 					"id": "36183903-16b6ea03-9f22-496c-a6ce-295edc39687e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
