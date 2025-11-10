@@ -70070,7 +70070,112 @@
 		},
 		{
 			"name": "O11 – Provider Scripts",
-			"item": [],
+			"item": [
+				{
+					"name": "O11 Manifest Script",
+					"id": "36183903-16b6ea03-9f22-496c-a6ce-295edc39687e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"type": "text",
+									"key": "action",
+									"value": "manifest"
+								},
+								{
+									"type": "text",
+									"key": "bind",
+									"value": "{{bind}}"
+								},
+								{
+									"type": "text",
+									"key": "proxy",
+									"value": "{{proxy}}"
+								},
+								{
+									"type": "text",
+									"key": "doh",
+									"value": "{{doh}}"
+								},
+								{
+									"type": "text",
+									"key": "dns",
+									"value": "{{dns}}"
+								},
+								{
+									"type": "text",
+									"key": "worker",
+									"value": "{{worker}}"
+								},
+								{
+									"type": "text",
+									"key": "id",
+									"value": "{{id}}"
+								},
+								{
+									"type": "text",
+									"key": "drm",
+									"value": "{{drm}}"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{o11_base_url}}/scripts/{{providerId}}/manifest?action=manifest&bind={{bind}}&proxy={{proxy}}&doh={{doh}}&dns={{dns}}&worker={{worker}}&id={{id}}&drm={{drm}}",
+							"protocol": "http",
+							"host": [
+								"{{o11_base_url}}"
+							],
+							"path": [
+								"scripts",
+								"{{providerId}}",
+								"manifest"
+							],
+							"query": [
+								{
+									"key": "action",
+									"value": "manifest"
+								},
+								{
+									"key": "bind",
+									"value": "{{bind}}"
+								},
+								{
+									"key": "proxy",
+									"value": "{{proxy}}"
+								},
+								{
+									"key": "doh",
+									"value": "{{doh}}"
+								},
+								{
+									"key": "dns",
+									"value": "{{dns}}"
+								},
+								{
+									"key": "worker",
+									"value": "{{worker}}"
+								},
+								{
+									"key": "id",
+									"value": "{{id}}"
+								},
+								{
+									"key": "drm",
+									"value": "{{drm}}"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X GET \"http://{{o11_base_url}}/scripts/{{providerId}}/manifest\" -G --data-urlencode \"action=manifest\" --data-urlencode \"bind={{bind}}\" --data-urlencode \"proxy={{proxy}}\" --data-urlencode \"doh={{doh}}\" --data-urlencode \"dns={{dns}}\" --data-urlencode \"worker={{worker}}\" --data-urlencode \"id={{id}}\" --data-urlencode \"drm={{drm}}\""
+					},
+					"response": []
+				}
+			],
 			"id": "36183903-c9a07437-3add-4c87-a3a0-b5b8cbc5aa6a"
 		}
 	]
