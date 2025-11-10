@@ -70326,6 +70326,101 @@
 						"description": "Generated from cURL: curl -X GET \"http://{{o11_base_url}}/scripts/{{providerId}}/events\" -G --data-urlencode \"action=events\" --data-urlencode \"bind={{bind}}\" --data-urlencode \"proxy={{proxy}}\" --data-urlencode \"doh={{doh}}\" --data-urlencode \"dns={{dns}}\" --data-urlencode \"worker={{worker}}\" --data-urlencode \"heartbeaturl={{heartbeaturl}}\" --data-urlencode \"heartbeatparams={{heartbeatparams}}\" --data-urlencode \"id={{id}}\""
 					},
 					"response": []
+				},
+				{
+					"name": "O11 Channels Script",
+					"id": "36183903-cb5e408c-0681-42e5-8ac1-f885503f96f9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"type": "text",
+									"key": "action",
+									"value": "channels"
+								},
+								{
+									"type": "text",
+									"key": "bind",
+									"value": "{{bind}}"
+								},
+								{
+									"type": "text",
+									"key": "proxy",
+									"value": "{{proxy}}"
+								},
+								{
+									"type": "text",
+									"key": "doh",
+									"value": "{{doh}}"
+								},
+								{
+									"type": "text",
+									"key": "dns",
+									"value": "{{dns}}"
+								},
+								{
+									"type": "text",
+									"key": "worker",
+									"value": "{{worker}}"
+								},
+								{
+									"type": "text",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{o11_base_url}}/scripts/{{providerId}}/channels?action=channels&bind={{bind}}&proxy={{proxy}}&doh={{doh}}&dns={{dns}}&worker={{worker}}&id={{id}}",
+							"protocol": "http",
+							"host": [
+								"{{o11_base_url}}"
+							],
+							"path": [
+								"scripts",
+								"{{providerId}}",
+								"channels"
+							],
+							"query": [
+								{
+									"key": "action",
+									"value": "channels"
+								},
+								{
+									"key": "bind",
+									"value": "{{bind}}"
+								},
+								{
+									"key": "proxy",
+									"value": "{{proxy}}"
+								},
+								{
+									"key": "doh",
+									"value": "{{doh}}"
+								},
+								{
+									"key": "dns",
+									"value": "{{dns}}"
+								},
+								{
+									"key": "worker",
+									"value": "{{worker}}"
+								},
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X GET \"http://{{o11_base_url}}/scripts/{{providerId}}/channels\" -G --data-urlencode \"action=channels\" --data-urlencode \"bind={{bind}}\" --data-urlencode \"proxy={{proxy}}\" --data-urlencode \"doh={{doh}}\" --data-urlencode \"dns={{dns}}\" --data-urlencode \"worker={{worker}}\" --data-urlencode \"id={{id}}\""
+					},
+					"response": []
 				}
 			],
 			"id": "36183903-c9a07437-3add-4c87-a3a0-b5b8cbc5aa6a"
