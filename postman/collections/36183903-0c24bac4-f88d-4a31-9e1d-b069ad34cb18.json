@@ -70425,6 +70425,363 @@
 				}
 			],
 			"id": "36183903-c9a07437-3add-4c87-a3a0-b5b8cbc5aa6a"
+		},
+		{
+			"name": "O11 – Provider Scripts Copy",
+			"item": [
+				{
+					"name": "O11 Manifest Script",
+					"id": "36183903-ce3725be-14fd-4912-a94c-eb6d885e35a2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"type": "text",
+									"key": "action",
+									"value": "manifest"
+								},
+								{
+									"type": "text",
+									"key": "bind",
+									"value": "{{bind}}"
+								},
+								{
+									"type": "text",
+									"key": "proxy",
+									"value": "{{proxy}}"
+								},
+								{
+									"type": "text",
+									"key": "doh",
+									"value": "{{doh}}"
+								},
+								{
+									"type": "text",
+									"key": "dns",
+									"value": "{{dns}}"
+								},
+								{
+									"type": "text",
+									"key": "worker",
+									"value": "{{worker}}"
+								},
+								{
+									"type": "text",
+									"key": "id",
+									"value": "{{id}}"
+								},
+								{
+									"type": "text",
+									"key": "drm",
+									"value": "{{drm}}"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{o11_base_url}}/scripts/{{providerId}}/manifest?action=manifest&bind={{bind}}&proxy={{proxy}}&doh={{doh}}&dns={{dns}}&worker={{worker}}&id={{id}}&drm={{drm}}",
+							"protocol": "http",
+							"host": [
+								"{{o11_base_url}}"
+							],
+							"path": [
+								"scripts",
+								"{{providerId}}",
+								"manifest"
+							],
+							"query": [
+								{
+									"key": "action",
+									"value": "manifest"
+								},
+								{
+									"key": "bind",
+									"value": "{{bind}}"
+								},
+								{
+									"key": "proxy",
+									"value": "{{proxy}}"
+								},
+								{
+									"key": "doh",
+									"value": "{{doh}}"
+								},
+								{
+									"key": "dns",
+									"value": "{{dns}}"
+								},
+								{
+									"key": "worker",
+									"value": "{{worker}}"
+								},
+								{
+									"key": "id",
+									"value": "{{id}}"
+								},
+								{
+									"key": "drm",
+									"value": "{{drm}}"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X GET \"http://{{o11_base_url}}/scripts/{{providerId}}/manifest\" -G --data-urlencode \"action=manifest\" --data-urlencode \"bind={{bind}}\" --data-urlencode \"proxy={{proxy}}\" --data-urlencode \"doh={{doh}}\" --data-urlencode \"dns={{dns}}\" --data-urlencode \"worker={{worker}}\" --data-urlencode \"id={{id}}\" --data-urlencode \"drm={{drm}}\""
+					},
+					"response": []
+				},
+				{
+					"name": "O11 CDM Script",
+					"id": "36183903-fb250793-2b49-49b5-ac10-38dc2cb25ca2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"action\":\"cdm\",\"bind\":\"{{bind}}\",\"proxy\":\"{{proxy}}\",\"doh\":\"{{doh}}\",\"dns\":\"{{dns}}\",\"worker\":\"{{worker}}\",\"drm\":\"{{drm}}\",\"pssh\":\"{{pssh}}\",\"challenge\":\"{{challenge}}\",\"id\":\"{{id}}\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{o11_base_url}}/scripts/{{providerId}}/cdm",
+							"protocol": "http",
+							"host": [
+								"{{o11_base_url}}"
+							],
+							"path": [
+								"scripts",
+								"{{providerId}}",
+								"cdm"
+							]
+						},
+						"description": "Generated from cURL: curl -X POST \"http://{{o11_base_url}}/scripts/{{providerId}}/cdm\" -H \"Content-Type: application/json\" -d '{\"action\":\"cdm\",\"bind\":\"{{bind}}\",\"proxy\":\"{{proxy}}\",\"doh\":\"{{doh}}\",\"dns\":\"{{dns}}\",\"worker\":\"{{worker}}\",\"drm\":\"{{drm}}\",\"pssh\":\"{{pssh}}\",\"challenge\":\"{{challenge}}\",\"id\":\"{{id}}\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "O11 Events Script",
+					"id": "36183903-22c4fae2-8d21-440f-96ab-4f34b094fba5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"type": "text",
+									"key": "action",
+									"value": "events"
+								},
+								{
+									"type": "text",
+									"key": "bind",
+									"value": "{{bind}}"
+								},
+								{
+									"type": "text",
+									"key": "proxy",
+									"value": "{{proxy}}"
+								},
+								{
+									"type": "text",
+									"key": "doh",
+									"value": "{{doh}}"
+								},
+								{
+									"type": "text",
+									"key": "dns",
+									"value": "{{dns}}"
+								},
+								{
+									"type": "text",
+									"key": "worker",
+									"value": "{{worker}}"
+								},
+								{
+									"type": "text",
+									"key": "heartbeaturl",
+									"value": "{{heartbeaturl}}"
+								},
+								{
+									"type": "text",
+									"key": "heartbeatparams",
+									"value": "{{heartbeatparams}}"
+								},
+								{
+									"type": "text",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{o11_base_url}}/scripts/{{providerId}}/events?action=events&bind={{bind}}&proxy={{proxy}}&doh={{doh}}&dns={{dns}}&worker={{worker}}&heartbeaturl={{heartbeaturl}}&heartbeatparams={{heartbeatparams}}&id={{id}}",
+							"protocol": "http",
+							"host": [
+								"{{o11_base_url}}"
+							],
+							"path": [
+								"scripts",
+								"{{providerId}}",
+								"events"
+							],
+							"query": [
+								{
+									"key": "action",
+									"value": "events"
+								},
+								{
+									"key": "bind",
+									"value": "{{bind}}"
+								},
+								{
+									"key": "proxy",
+									"value": "{{proxy}}"
+								},
+								{
+									"key": "doh",
+									"value": "{{doh}}"
+								},
+								{
+									"key": "dns",
+									"value": "{{dns}}"
+								},
+								{
+									"key": "worker",
+									"value": "{{worker}}"
+								},
+								{
+									"key": "heartbeaturl",
+									"value": "{{heartbeaturl}}"
+								},
+								{
+									"key": "heartbeatparams",
+									"value": "{{heartbeatparams}}"
+								},
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X GET \"http://{{o11_base_url}}/scripts/{{providerId}}/events\" -G --data-urlencode \"action=events\" --data-urlencode \"bind={{bind}}\" --data-urlencode \"proxy={{proxy}}\" --data-urlencode \"doh={{doh}}\" --data-urlencode \"dns={{dns}}\" --data-urlencode \"worker={{worker}}\" --data-urlencode \"heartbeaturl={{heartbeaturl}}\" --data-urlencode \"heartbeatparams={{heartbeatparams}}\" --data-urlencode \"id={{id}}\""
+					},
+					"response": []
+				},
+				{
+					"name": "O11 Channels Script",
+					"id": "36183903-4fa4d215-7b04-4950-9a43-dded04dbb69d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"type": "text",
+									"key": "action",
+									"value": "channels"
+								},
+								{
+									"type": "text",
+									"key": "bind",
+									"value": "{{bind}}"
+								},
+								{
+									"type": "text",
+									"key": "proxy",
+									"value": "{{proxy}}"
+								},
+								{
+									"type": "text",
+									"key": "doh",
+									"value": "{{doh}}"
+								},
+								{
+									"type": "text",
+									"key": "dns",
+									"value": "{{dns}}"
+								},
+								{
+									"type": "text",
+									"key": "worker",
+									"value": "{{worker}}"
+								},
+								{
+									"type": "text",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{o11_base_url}}/scripts/{{providerId}}/channels?action=channels&bind={{bind}}&proxy={{proxy}}&doh={{doh}}&dns={{dns}}&worker={{worker}}&id={{id}}",
+							"protocol": "http",
+							"host": [
+								"{{o11_base_url}}"
+							],
+							"path": [
+								"scripts",
+								"{{providerId}}",
+								"channels"
+							],
+							"query": [
+								{
+									"key": "action",
+									"value": "channels"
+								},
+								{
+									"key": "bind",
+									"value": "{{bind}}"
+								},
+								{
+									"key": "proxy",
+									"value": "{{proxy}}"
+								},
+								{
+									"key": "doh",
+									"value": "{{doh}}"
+								},
+								{
+									"key": "dns",
+									"value": "{{dns}}"
+								},
+								{
+									"key": "worker",
+									"value": "{{worker}}"
+								},
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X GET \"http://{{o11_base_url}}/scripts/{{providerId}}/channels\" -G --data-urlencode \"action=channels\" --data-urlencode \"bind={{bind}}\" --data-urlencode \"proxy={{proxy}}\" --data-urlencode \"doh={{doh}}\" --data-urlencode \"dns={{dns}}\" --data-urlencode \"worker={{worker}}\" --data-urlencode \"id={{id}}\""
+					},
+					"response": []
+				}
+			],
+			"id": "36183903-7997d96b-0412-4d66-a3a5-e2734a3546a6"
 		}
 	]
 }
