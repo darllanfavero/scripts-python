@@ -70559,7 +70559,36 @@
 					"response": []
 				}
 			],
-			"id": "36183903-c9a07437-3add-4c87-a3a0-b5b8cbc5aa6a"
+			"id": "36183903-c9a07437-3add-4c87-a3a0-b5b8cbc5aa6a",
+			"auth": {
+				"type": "bearer"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5487a363-9cef-497a-b4bb-c7a48e4b354a",
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "f13e1911-1dbb-4d12-afe6-830394e6b3df",
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "O11 – Provider Scripts Copy",
