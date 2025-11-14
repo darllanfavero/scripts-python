@@ -26199,8 +26199,103 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://www.clarotvmais.com.br"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://www.clarotvmais.com.br/usuario/minha-conta/conectar-tv"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "x-dtpc",
+								"value": "-30894$564500051_536h33vMPKFHCNJBMLFWWWAPWFAHTATJSCUEUHP-0e0"
+							},
+							{
+								"key": "x-xsrf-token",
+								"value": "njKUEq9jNXUZikr8PNgShgLFtohFx7fxcKGDLM3taj3vlgoxzqpU6zkyjF7idHtb"
+							},
+							{
+								"key": "Cookie",
+								"value": "dtCookie=v_4_srv_-2D30894_sn_LTC82DEF8ENOG8LICQDEV0P3JFPOKURJ; rxVisitor=17627629637050GONC07B091JQLK6O7I0R1U4FILAODEE; optimizelyEndUserId=oeu1762762964347r0.9643983825205722; optimizelySegments=%7B%225106620719%22%3A%22gc%22%2C%225117170607%22%3A%22direct%22%2C%225102881182%22%3A%22false%22%7D; optimizelyBuckets=%7B%7D; avs_browser_id=ec4cfcb4-f59a-4eda-a01c-d328181ee88e; avs-client-user-session-id=9eb3ec6f-332b-414d-88ef-373d311b607d; cookiesession1=678A3E2C442D55A75DBACE97A9AB27D8; _gcl_au=1.1.2017951238.1762762973; _vwo_uuid_v2=D325876817DC523860A4FE387E4943DAB|f41531741f1bf800747009511a62b487; _sfid_f63e={%22anonymousId%22:%224af3f4da72d1f997%22%2C%22consents%22:[]}; _hjSession_3379283=eyJpZCI6ImZmMGE1NGUxLWFlZTItNGY1OS04MWYxLWEwNjNhMDY4YzQ3YSIsImMiOjE3NjI3NjI5ODE2MDEsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MH0=; _vwo_uuid=D325876817DC523860A4FE387E4943DAB; _vwo_ds=3%241762762973%3A81.1881173%3A%3A%3A%3A%3A1762762973%3A1762762973%3A1; _tt_enable_cookie=1; _ttp=01K9PDS1KGFGK00N7P63HHHQX2_.tt.2; _fbp=fb.2.1762762983475.21129297873292853; _vis_opt_s=1%7C; _vis_opt_test_cookie=1; _ga=GA1.1.99646885.1762762984; bitmovin_analytics_uuid=36a1dda1-cbf7-4487-9993-c2c1c2990a52; PF=FdQ1ddqAe8DPtG8fQieYC13DWHFk7Cj7xouFvWe0tsCT; avs_cookie=eyJhbGciOiJIUzI1NiJ9.eyJwYXlsb2FkIjoiV3lhR3YzSkNmaXhMZ1V1eVQxbU9yZzMvbHk1TWFaRUtEWm9ZL1c3WDZkZFExVzBUT3ZqR0RFcW1qSmZrbHdBdVJMR2w4RlBoN2dielZ3b0dmeC91VlZkUVZVTmJOTnBoY3liZTFzeVdNN1FEaFNMby9QeEJiOE50dG1GanpxMjJLYWhXQlk1Q1FWdERlamVOSUtVcU93QW0zS1lMaUpTWE1NMD0iLCJpc3MiOiJBVlMiLCJ4c3JmVG9rZW4iOiJuaktVRXE5ak5YVVppa3I4UE5nU2hnTEZ0b2hGeDdmeGNLR0RMTTN0YWozdmxnb3h6cXBVNnpreWpGN2lkSHRiIiwiZXhwIjoxNzc4MzE0OTk1LCJub25jZSI6IltCQDU0N2JhMTcwIn0.FispkxcJKMIvSbULWISrHltkaORR_5DvFoJs38wQJhQ; LoginInfo=\"%7B%22resultCode%22%3A%22OK%22%2C%22errorDescription%22%3A%22%22%2C%22message%22%3A%22%22%2C%22systemTime%22%3A1762762996%2C%22crmAccountId%22%3A%22macielig%22%2C%22userName%22%3A%22SERGIO%20LUIZ%20MACIEL%22%2C%22idmSessionId%22%3A%22%22%2C%22defaultServiceID%22%3A%22354351373003%22%2C%22serviceIDList%22%3Anull%2C%22isTvVas%22%3Afalse%7D\"; avs_user_info=SERGIO LUIZ MACIEL||macielig@hotmail.com; avs_authmethod=PASSWORD; xWingAllianceV2=b393dfb1ab09f450c2ea45aac7142325:34bffe794c22bc827e3b329c8e203cc0d8295c55b7f7d0fe2b7e6a2ce944fdd96fd5d064923400ccb02a342f0cd5cf31341f0c8c946b70077b5beb451fd4e1df7c1760063618e09b174992336cde111b; _evga_cad8={%22uuid%22:%224af3f4da72d1f997%22%2C%22puid%22:%22Q0ax2V0dOUSNY_tdy9Wmhlfhi3jkuc3XN-09RE6p1fFADk2l4IbXd-tXlqd0Wx4ipETNJLAget3OrvzeYegYfJHukWkGDtMeIdJ2fvI8ALtil0aZCRqvO0HPKAMBGEcyWpLHJD1JJeJgz_sCXmlo_AFMmNg1-GisBlYFX0MZTH7XDooVQ33btPiCI6qmWAXLkH70JgOThh3jFRGrh0Vdc_THdTV8ROwqnam08SDkpmrsGyZh3OrYhlFu-jZZE87bLdORfeMIXUGcHYNyAscSj1de5UcpYEaDCoICEMCTcIMDn3FfcByGE2FeeE6nD0lb%22%2C%22affinityId%22:%220Iu%22}; _hjSessionUser_3379283=eyJpZCI6IjNlYjVmMjYzLTQ2MGItNTVlMy1hNGNhLWE3ZTQ4YWRiYTQ2OSIsImNyZWF0ZWQiOjE3NjI3NjI5ODE1OTksImV4aXN0aW5nIjp0cnVlfQ==; optimizelyPendingLogEvents=%5B%5D; dtSa=-; 6df00a0c49b6e342f9ed3346cca75ca4=809343d98b4a30596afc492e9228a8ae; _vwo_sn=0%3A5%3A%3A%3A%3A%3A190; ttcsid=1762762983041::IPTFHxbNKzjQJivMN_Pl.1.1762764507012.0; ttcsid_CEBNB9RC77UA05ON2VFG=1762762983038::qQEFMPME-yN_Kc5mOaqt.1.1762764507013.0; sessionId=dddc03bc-f7c5-34d7-2cab-931c32e1329a; _ga_XJJ199PE67=GS2.1.s1762762984$o1$g1$t1762764514$j25$l0$h0; OptanonAlertBoxClosed=2025-11-10T08:48:34.469Z; OptanonConsent=isGpcEnabled=0&datestamp=Mon+Nov+10+2025+05%3A48%3A34+GMT-0300+(Hor%C3%A1rio+Padr%C3%A3o+de+Bras%C3%ADlia)&version=202401.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=NotLandingPage&groups=C0004%3A1%2CC0003%3A1%2CC0002%3A1%2CC0001%3A1&AwaitingReconsent=false; rxvt=1762766318371|1762762963707; dtPC=-30894$564500051_536h33vMPKFHCNJBMLFWWWAPWFAHTATJSCUEUHP-0e0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"token\":\"002282\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.clarotvmais.com.br/avsclient/auth/token?channel=ANDROIDTV",
+							"protocol": "https",
+							"host": [
+								"www",
+								"clarotvmais",
+								"com",
+								"br"
+							],
+							"path": [
+								"avsclient",
+								"auth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "channel",
+									"value": "ANDROIDTV"
+								}
+							]
+						}
 					},
 					"response": []
 				}
