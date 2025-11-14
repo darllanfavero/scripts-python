@@ -70180,6 +70180,11 @@
 			"name": "O11 – Provider Scripts",
 			"item": [
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "36183903-49990a4d-f4df-45b2-860e-02b7c89b01c8"
+				},
+				{
 					"name": "O11 Manifest Script",
 					"event": [
 						{
