@@ -26172,7 +26172,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"token\":\"055612\"}"
+							"raw": "{\"token\":\"002282\"}"
 						},
 						"url": {
 							"raw": "https://androidtv-mediation-layer.clarobrasil.mobi/api/v1/auth/token",
