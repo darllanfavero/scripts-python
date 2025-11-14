@@ -70561,13 +70561,20 @@
 			],
 			"id": "36183903-c9a07437-3add-4c87-a3a0-b5b8cbc5aa6a",
 			"auth": {
-				"type": "bearer"
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "string"
+					}
+				]
 			},
 			"event": [
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "5487a363-9cef-497a-b4bb-c7a48e4b354a",
+						"id": "96acfa58-0676-4149-87ab-f05b6e45372e",
 						"type": "text/javascript",
 						"packages": {},
 						"requests": {},
@@ -70579,7 +70586,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "f13e1911-1dbb-4d12-afe6-830394e6b3df",
+						"id": "b26f1010-5864-4d02-8608-1d3b96d04028",
 						"type": "text/javascript",
 						"packages": {},
 						"requests": {},
